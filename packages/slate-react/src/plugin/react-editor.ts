@@ -504,9 +504,6 @@ export const ReactEditor = {
           textNode = leafNode.closest('[data-slate-node="text"]')!
           domNode = leafNode
           offset = domNode.textContent!.length
-          domNode.querySelectorAll('[data-slate-zero-width]').forEach(el => {
-            offset -= el.textContent!.length
-          })
         }
       }
 
